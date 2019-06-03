@@ -1,0 +1,1 @@
+TweenMax.to("#ship1", 2, {x:600});
