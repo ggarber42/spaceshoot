@@ -7,6 +7,7 @@
     <title>SpaceShoot</title>
     <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/press-start-2p" type="text/css"/>
 </head>
 <body>
     <header>
@@ -19,23 +20,23 @@
                 </ul>
         </div>
     </header>
-    <main>
-        <!-- <img id="ship1" src="imgs/ship1.jpeg" alt="ship1"> -->
-        <section id="play">
-            <h3>Jogue Aqui!</h3>
+    <main>  
+        <section class='text-section'>
+            <p class="text">Prepare-se para mais um jogo normal....</p>
+            <p class="text">De naves</p>
+            <p class="text">Retrô</p>
         </section>
-        <section>
-            <ul>
-                <li>Notícias</li>
-                <li>Resultados</li>
-                <li>Participe do nosso Fórum</li>
-            </ul>
+        <section class="play">
+            <h3>JOGUE AQUI!</h3>
+            <h3>SpaceShoot</h3>
+        </section>
+        <section class="overlay" >
+            <div id="nave"></div>
         </section>
     </main>
-    <footer>
-
-    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineLite.min.js"></script>
     <script src="script/script.js"></script>
 </body>
 </html>

@@ -4,9 +4,12 @@ html, body{
     height: 100%;
 }
 
+h3{
+    margin: 0;
+}
+
 body{
-    /* background-image: url("../imgs/background.jpeg"); */
-    background-size: contain;
+    background: #000;
 }
 
 header{
@@ -14,10 +17,11 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0.75% 10%;
+    padding: 0 10%;
     background-color: #13151a;
     color: #fff;
     font-family: 'Orbitron', sans-serif;
+    min-height: 65px;
 }
 
 .title{
@@ -36,23 +40,67 @@ header{
 }
 
 main{
-    background-color: #1a2730;
+    background-color: #000;
     width: 100%;
-    height: 100%;
+    height: calc( 100% - 65px);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     
 }
 
-#play h3{
-    margin-top: 0
+.typewriter{
+    text-align: center;
 }
 
-#ship1{
+ .text{
+    font-family: 'PressStart2PRegular', sans-serif; 
+   font-weight: normal; 
+   font-style: normal; 
+   color: #fff;
+   text-align: center;
+}
+
+.play{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+h3{
+    font-family: 'PressStart2PRegular', sans-serif; 
+    color: #fff;
+    font-size: 3rem;
+    padding: 2%;
+    border: 2px dashed #fff;
+    margin-top: 0.5em;
+}
+
+.typwriter-animation{
+    width: 0;
+}
+
+#nave{
+    width: 100px;
+    height: 100px;
     position: absolute;
+    top: 95%;
+    left: 50%;
+    background-image: url('../imgs/nave1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-footer{
-    height: calc(100vh - 60vh);
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2;
 }
