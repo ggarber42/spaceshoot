@@ -16,7 +16,7 @@
     //   "border-right-color": "rgba(255,255,255,0)",
     //   repeat: -1,
     //   ease:  SteppedEase.config(37)
-    // }, 0);
+    // }, 0);t p
 //   // letter animation
 
 //   tl.play();

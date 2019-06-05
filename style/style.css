@@ -67,6 +67,12 @@ main{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all 0.5s ease-out;
+    transform: scale(0.95);
+}
+
+.play:hover{
+    transform: scale(1);
 }
 
 h3{
