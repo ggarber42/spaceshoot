@@ -29,9 +29,10 @@ const playText = document.querySelectorAll('h3');
 
 var tl = new TimelineLite();
 tl.to(nave,3,{top: 300, scale:3.85});
+tl.to(nave,0.5,{display: 'none'});
 tl.to(overlay, 0.1, {display:"none"});
 tl.staggerFrom(texts, 0.5, {opacity: 0, y:30},1);
 tl.staggerTo(texts, 0.5, {display: 'none', y:0});
-tl.from(playText, 2,{opacity: 0, y:-20, marginBottom: '2em'})
+tl.from(playText, 2,{opacity: 0, y:-40})
 
 
